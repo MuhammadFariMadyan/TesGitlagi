@@ -34,7 +34,7 @@ a:hover {
 
 .bg-white .header-topbar .topbar-left li:hover i,
 .bg-white .header-topbar .topbar-left li:hover span {
-    color: #ffdd00;
+    color: #ffffff;
 }
 
 .header-03 .header-topbar .btn-menu:hover .icons,
@@ -169,7 +169,7 @@ a:hover {
 }
 
 .tab-search .tab-btn-wrapper.active .tab-btn {
-    background-color: #ffdd00;
+    background-color: #f1c40f;
 }
 
 .tab-search-default .tab-btn-wrapper .tab-btn i {

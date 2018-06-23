@@ -491,6 +491,10 @@ a:hover {
     background-color: #ffdd00;
 }
 
+.info-box {
+    background-color: #ffdd00;   
+}
+
 /*----------- blog detail ----------*/
 
 .item-blog-detail .blog-text .sideline:after {

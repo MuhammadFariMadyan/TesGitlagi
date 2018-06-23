@@ -515,7 +515,7 @@ a:hover {
 }
 
 .page-banner.homepage-default {
-    height: 100vh;
+    height: 50vh;
 
     background-image: url('../images/background/homepage-default-banner.jpg');
 }
@@ -537,7 +537,7 @@ a:hover {
 .page-banner-2.homepage-03 {
     vertical-align: bottom;
 
-    background-image: url('../images/background/homepage-03-banner.jpg');
+    background-image: url('../images/background/homepage-02-banner.jpg');
 }
 
 .tours {
@@ -569,15 +569,19 @@ a:hover {
 }
 
 .tour-result {
-    background-image: url('../images/background/tour-result.jpg');
+    background-image: url('../images/background/bg-cruises-detail.jpg');
 }
 
 .flight-result {
-    background-image: url('../images/background/flight-result.jpg');
+    background-image: url('../images/background/bg-cruises-detail.jpg');
 }
 
 .hotel-result {
-    background-image: url('../images/background/hotel-result.jpg');
+    background-image: url('../images/background/bg-cruises-detail.jpg');
+}
+
+.train-result {
+    background-image: url('../images/background/bg-cruises-detail.jpg');
 }
 
 .cruises-result {
@@ -585,7 +589,7 @@ a:hover {
 }
 
 .car-rent-result {
-    background-image: url('../images/background/car-rent-result.jpg');
+    background-image: url('../images/background/bg-car-detail.jpg');
 }
 
 .tour-view {
@@ -612,6 +616,9 @@ a:hover {
     background-image: url('../images/background/bg-section-faq.jpg');
 }
 
+.bg-info {
+    background-image: url('../images/background/bg-cruises-detail.jpg');
+}
 .bg-team {
     background-image: url('../images/background/bg-section-team.jpg');
 }
@@ -827,9 +834,11 @@ a:hover {
 .header-03 .header-topbar {
     line-height: 50px;
 
-    color: #959595;
+    color: #121212;    
+    /*color: #ffffff;   */
     border-bottom: none;
     background-color: #ffffff;
+    /*background-color: #121212;*/
 }
 
 .header-03 .header-topbar .topbar-left {
@@ -893,7 +902,8 @@ a:hover {
 
     border-top: 1px solid #f1f1f1;
     border-bottom: none;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
+    background-color: #121212;
 }
 
 .header-03 .header-main .navbar-header {
@@ -2043,24 +2053,7 @@ a:hover {
     color: #8e8e8e;
 }
 
-.booking-widget ul li .link:before {
-    font-family: 'FontAwesome';
-    font-size: 7px;
-
-    position: absolute;
-    left: 0;
-
-    content: '\f10c';
-}
-
-.booking-widget ul li:hover .link:before {
-    content: '\f111';
-}
-
-.booking-widget ul li:last-child .link {
-    padding-bottom: 0;
-}
-
+.booking-widget ul li:last-child .link,
 .explore-widget ul,
 .top-deals-widget ul {
     margin-bottom: 0;
@@ -2562,6 +2555,11 @@ a:hover {
 
 .tab-search-long .find-cruises-widget .count,
 .tab-search-long .find-tours-widget .count,
+.tab-search-long .find-trains-widget .count,
+.tab-search-long .find-transfer-widget .count {
+    width:      calc((100% - 54px) * 8 / 100);
+    width: -moz-calc((100% - 54px) * 8 / 100);
+}
 .tab-search-long .find-transfer-widget .count {
     width:      calc((100% - 54px) * 8 / 100);
     width: -moz-calc((100% - 54px) * 8 / 100);
@@ -2575,10 +2573,14 @@ a:hover {
     padding: 0 0 0 25px;
 }
 
+.tab-search-long .find-flight-widget .date,
+.tab-search-long .find-flight-widget .input-daterange,
 .tab-search-long .find-cruises-widget .place,
 .tab-search-long .find-cruises-widget .time-count,
 .tab-search-long .find-tours-widget .date,
 .tab-search-long .find-tours-widget .place,
+.tab-search-long .find-trains-widget .date,
+.tab-search-long .find-trains-widget .place,
 .tab-search-long .find-transfer-widget .date,
 .tab-search-long .find-transfer-widget .place {
     width:      calc((100% - 54px) * 34 / 100);
@@ -2604,8 +2606,8 @@ a:hover {
 
 .tab-search-transparent .find-widget {
     padding: 50px 70px;
-
-    background-color: rgba(255, 255, 255, .5);
+    /* background transparan default putih => rgba(255, 255, 255, .5) #8d8c91 #222222*/
+    background-color: #f1c40f; 
 }
 
 .tab-search-condensed {
@@ -3089,10 +3091,11 @@ a:hover {
 }
 
 .tab-search-transparent {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .tab-search-transparent .tab-btn-wrapper .tab-btn {
+    /*background-color: #f1c40f;*/
     background-color: rgba(12, 12, 12, .05);
 }
 

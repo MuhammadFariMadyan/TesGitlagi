@@ -3860,6 +3860,15 @@
             background-size: cover;
 }
 
+.info {
+    position: relative;
+
+    background-repeat: repeat;
+    background-position: bottom;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+
 .contact .contact-wrapper-images {
     position: absolute;
     bottom: 0;
@@ -3906,6 +3915,11 @@
     text-align: center;
 }
 
+.info-box {
+    padding: 40px 35px;
+    text-align: center;
+}
+
 .contact-box .title {
     font-size: 22px;
     font-weight: bold;
@@ -3917,9 +3931,22 @@
     color: #3c3c3c;
 }
 
+.info-box .title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    color: #3c3c3c;
+}
+
 .contact-box > .text {
     font-style: italic;
 
+    margin: 0 0 35px 0;
+}
+
+.info-box > .text {
+    font-style: italic;
     margin: 0 0 35px 0;
 }
 
@@ -6818,13 +6845,13 @@
     font-weight: bold;
     line-height: 4.29rem;
 
-    margin-top: 100px;
-    margin-bottom: 0;
+    margin-top: 105px;
+    margin-bottom: -5px;
 
     letter-spacing: 1px;
     text-transform: uppercase;
 
-    color: #5f7481;
+    color: #233486;
 }
 
 .homepage-03 h4.sub-banner {
@@ -6832,12 +6859,13 @@
     font-weight: normal;
     line-height: 1.14rem;
 
-    margin-top: 10px;
-    margin-bottom: 80px;
+    margin-top: 0px;
+    margin-bottom: 105px;
 
     letter-spacing: 5px;
 
-    color: #526673;
+    /*color: #ffdd00;*/
+    color: #233486;
 }
 
 /*----------  3.2. Flight Results  ----------*/
@@ -7356,8 +7384,30 @@
     float: left;
 }
 
-.car-price-wrapper .title-right {
-    float: right;
+.car-price-wrapper .title-center {
+    font-size: 16px;
+
+    float: center;
+}
+
+.car-price-wrapper .title-center {
+    float: center;
+}
+
+.car-price-wrapper .title-center .text {
+    display: inline-block;
+
+    text-align: center;
+}
+
+.car-price-wrapper .title-center .text-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.car-price-wrapper .title-center .text-price-total {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .car-price-wrapper .title-right .text {
@@ -7832,12 +7882,24 @@
     margin: 0 0 30px 0;
 }
 
+.wrapper-info-lainnya .info-box .title {
+    margin: 0 0 30px 0;
+}
+
 .wrapper-contact-faq .contact-submit {
+    margin-top: 30px;
+}
+
+.wrapper-info-lainnya .info-submit {
     margin-top: 30px;
 }
 
 .wrapper-contact-faq .contact-form .form-input {
     background-color: #ffffff;
+}
+
+.wrapper-info-lainnya .info-form .form-input {
+    background-color: #FEFAFA;
 }
 
 .main-team .padding-col-left {
